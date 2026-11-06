@@ -88,3 +88,58 @@ The LSTM baseline showed poor generalization due to geographic distribution shif
 
 ## Project Domain
 Artificial Intelligence and Machine Learning
+
+
+
+## Environment Setup
+
+Follow these steps to set up the project on your local machine.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/bhuvankv2912-alt/Maritime-Vessel-Trajectory-Prediction.git
+cd Maritime-Vessel-Trajectory-Prediction
+```
+
+### 2. Create a virtual environment
+
+```bash
+python -m venv .venv
+```
+
+### 3. Activate the virtual environment
+
+**Windows (PowerShell):**
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+### 4. Install dependencies
+
+```bash
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+### 5. Dataset
+
+The original AIS dataset is not included in this repository because of its large file size.
+
+Obtain the `aisdk-2025-03-06.csv` dataset separately and place it inside:
+
+```text
+data/
+└── aisdk-2025-03-06.csv
+```
+
+### 6. Open the notebook
+
+Open the project folder in VS Code, select the `.venv` Python interpreter, and run:
+
+```text
+notebooks/01_ais_exploration.ipynb
+```
+
+**Note:** The project was developed using Python 3.11.9. A compatible Python environment is recommended.
